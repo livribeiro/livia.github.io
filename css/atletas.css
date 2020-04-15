@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.areaImage {
+    background-image: url('../img/atletas.jpg');
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.areaImageHist {
+    background-image: url('../img/historia.jpg');
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conteudoHist {
+    width: 70%;
+    height: 750px;
+    text-align: justify;
+    font-family: 'Arial';
+    margin-top: 3%;
+    margin-left: 15%;
+    align-items: center;
+}
+
+.menui .menu {
+    background-color: rgb(134, 122, 122);
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.conteudo {
+    width: 60%;
+    height: 750px;
+    text-align: justify;
+    font-family: 'Arial';
+    margin-top: 3%;
+    margin-left: 20%;
+    align-items: center;
+}
+
+#imageCont {
+    width: 100%;
+    height: 90%;
+}
+
+#imageContHist {
+    width: 60%;
+    height: -10vh;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+.rodape {
+    width: 100%;
+    height: 100px;
+    background-color: brown;
+    font-family: 'Arial';
+}
+
+#bt_menu:checked~.menu {
+    margin-left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(134, 122, 122);
+    color: white;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: rgb(173, 166, 166);
+}
+
+.menu ul ul li {
+    float: none;
+    background-color: rgb(143, 142, 142);
+}
+
+.menu ul ul li a {
+    background-color: rgb(143, 142, 142);
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: rgb(134, 122, 122);
+    color: white;
+    font-family: 'Arial';
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for="bt_menu"] {
+    display: none;
+}
+
+@media(max-width: 800px) {
+    .areaImage {
+        background-image: url('../img/olimpc.png');
+        background-size: 100%;
+        width: 100%;
+        height: 200px;
+    }
+    label[for="bt_menu"] {
+        display: block;
+        background-color: rgb(70, 69, 69);
+    }
+    .menu {
+        margin-top: 100px;
+        margin-left: -120%;
+        margin-right: 20%;
+        transition: all .4s;
+    }
+    #bt_menu {
+        margin-left: 0;
+    }
+    .menui {
+        width: 100vw;
+        height: 45vh;
+        background-color: rgb(134, 122, 122);
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    .areaImage {
+        background-image: url('../img/fund3.jpg');
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0px;
+        padding: 0xp;
+    }
+    #imageCont {
+        width: 130%;
+        height: 60vh;
+        margin-left: -15%;
+    }
+    .imageContHist {
+        width: 200px;
+        height: 200px;
+    }
+    .conteudoHist {
+        width: 70%;
+        height: 1300px;
+        text-align: justify;
+        font-family: 'Arial';
+        margin-top: 3%;
+        margin-left: 15%;
+        align-items: center;
+    }
+}
