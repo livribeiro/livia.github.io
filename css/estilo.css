@@ -38,13 +38,11 @@
     align-items: center
  }
 .conteudo{
-    width: 70%;
-    height:750px;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 50%;
+    height: 100%;
     text-align: justify;
-    font-family: 'Arial';
-    margin-top:3%;
-    margin-left:15%;
-    align-items: center;
    
 }
 
